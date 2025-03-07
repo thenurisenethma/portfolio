@@ -16,7 +16,69 @@
             background: linear-gradient(to bottom,black,#012A4C,#0E0307,#012A4C,black);
             color: transparent;
         }
+        header{
+            position: relative;
+            height: 15vh;
+        }
+        header>img{
+            position: absolute;
+            left: 1vw;
+            height: 15vh;
+            width: 15vh;
+        }
+        ul>li{
+            position: absolute;
+            top: 5vh;
+        }
+        ul>li:first-child{
+            position: absolute;
+            left: 40vw;
+        }
+        ul>li:nth-child(2){
+            left: 50vw;
+        }
+        ul>li:nth-child(3){
+            left: 60vw;
+        }
+        ul>li:nth-child(4){
+            left: 70vw;
+        }
+        ul>li:nth-child(5){
+            left: 80vw;
+        }
 
+        section{
+            position: relative;
+        }
+        section>p{
+            color: white;
+            text-align: center;
+            font-family: "Aboreto", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 28px;
+            position: absolute;
+            top: 15vh;
+            left: 0;
+            right: 0;
+
+
+        }
+        section>p:first-child{
+            top: 10vh;
+        }
+        section>p:nth-child(2){
+            top: 17vh;
+        }
+        section>p:nth-child(3){
+            top: 24vh;
+        }
+        section>p:nth-child(4){
+            top: 31vh;
+        }
+        section>p:nth-child(5){
+            top: 38vh;
+        }
         button{
             position: absolute;
             left: 45vw;
@@ -43,15 +105,28 @@
             color: white;
         }
 
-        .services{
-            position: absolute;
 
-        }
+
         .imgs>img{
             border-radius: 100%;
         }
 
-
+        .serviceSec{
+            position: absolute;
+            top: 100vh;
+        }
+        .serCard{
+            position: absolute;
+            top: 110vh;
+            height: 50vh;
+            width: 25vw;
+            background-color: black ;
+        }
+        #1{
+            position: absolute;
+            top: 110vh;
+            left: 50vw;
+        }
     </style>
 </head>
 <body>
@@ -78,31 +153,32 @@
 </section>
 <button type="button">See more...</button>
 
-<section class="services">
+<section class="serviceSec">
     <div>
         <h2>Services & Skills</h2>
         <div class="imgs">
-            <img src="resources/js2.png" alt="java script" height="50" width="50">
-            <img src="resources/css.jpg" alt="css" height="50" width="50">
-            <img src="resources/figma.png" alt="figma" height="50" width="50">
-            <img src="resources/html.png" alt="html" height="50" width="50">
+            <img id="1" src="resources/js2.png" alt="java script" height="50" width="50">
+            <img id="2" src="resources/css.jpg" alt="css" height="50" width="50">
+            <img id="3" src="resources/figma.png" alt="figma" height="50" width="50">
+            <img id="4" src="resources/html.png" alt="html" height="50" width="50">
 
-            <div><h3>Web Development</h3>
+            <div class="serCard">
+                <h3>Web Development</h3>
                 <p>Building modern, responsive, and user-friendly websites tailored to your needs. From sleek front-end designs to robust back-end solutions, I create websites that look great and perform even better.</p>
             </div>
-            <div>
+            <div class="serCard">
                 <h3>Web Design</h3>
                 <p>Crafting visually appealing, responsive, and functional website designs that align with your brand and captivate your audience. I focus on creating seamless experiences for every device.</p>
             </div>
-            <div>
+            <div class="serCard">
                 <h3>UI/UX Design</h3>
                 <p>Designing intuitive and engaging user interfaces with a focus on delivering exceptional user experiences. From wireframes  to final prototypes, I ensure your product is both functional and user-friendly.</p>
             </div>
 
-            <img src="resources/react.png" alt="react" height="50" width="54">
-            <img src="resources/java.jpg" alt="java" height="50" width="55">
-            <img src="resources/mysql.jpg" alt="mysql" height="50" width="50">
-            <img src="resources/angular.png" alt="angular" height="50" width="50">
+            <img id="5" src="resources/react.png" alt="react" height="50" width="54">
+            <img id="6" src="resources/java.jpg" alt="java" height="50" width="55">
+            <img id="7" src="resources/mysql.jpg" alt="mysql" height="50" width="50">
+            <img id="8" src="resources/angular.png" alt="angular" height="50" width="50">
 
         </div>
     </div>
