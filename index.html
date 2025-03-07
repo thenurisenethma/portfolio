@@ -7,10 +7,56 @@
     <meta name ="description" content="I'm Thenuri de Silva, a passionate Fullstack developer specializing in Web developing,UI/UX Engineering and Web Designing.Explore my projects, services, and contact me for collaboration.">
     <meta name="author" content="Thenuri de Silva">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: linear-gradient(to bottom,black,#012A4C,#0E0307,#012A4C,black);
+            color: transparent;
+        }
+
+        button{
+            position: absolute;
+            left: 45vw;
+            top: 75vh;
+            height: 7vh;
+            width: 9vw;
+            border: solid #012A4C;
+            border-radius: 10px;
+            background: linear-gradient( to right ,black,#012A4C,black) ;
+            color: white;
+        }
+        #triangle{
+            position: absolute;
+            top: 70vh;
+            left: 47vw;
+            width: 3px;
+            height: 3px;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-top: 15px solid #ffff;
+        }
+
+        h2,h3{
+            color: white;
+        }
+
+        .services{
+            position: absolute;
+
+        }
+        .imgs>img{
+            border-radius: 100%;
+        }
+
+
+    </style>
 </head>
 <body>
 <header>
-    <img src="resources/ts%20logo.png" alt="logo" height="150" width="150">
+    <img src="resources/ts%20logo%20nw.png" alt="logo" height="150" width="150">
     <nav>
         <ul>
             <li><a href="second-page.html#aboutMe">About</a></li>
@@ -21,18 +67,22 @@
         </ul>
     </nav>
 </header>
-<p>Hey There welcome to my portfolio!
-    I'm Thenuri De Silva.
-    A passionate student aspiring to become an IT professional in the near future.
-</p>
+<section>
+    <p>Hey There welcome to my portfolio!</p>
+    <p>    I'm Thenuri De Silva.</p>
+    <p>A passionate student aspiring to </p>
+    <p>become an IT professional in the near </p>
+    <p>future.</p>
 
-<button type="button">See more</button>
+    <div id="triangle"></div>
+</section>
+<button type="button">See more...</button>
 
-<section id="services">
+<section class="services">
     <div>
-        <h2>services & Skills</h2>
-        <div>
-            <img src="resources/js2.png" alt="java script" height="50" width="80">
+        <h2>Services & Skills</h2>
+        <div class="imgs">
+            <img src="resources/js2.png" alt="java script" height="50" width="50">
             <img src="resources/css.jpg" alt="css" height="50" width="50">
             <img src="resources/figma.png" alt="figma" height="50" width="50">
             <img src="resources/html.png" alt="html" height="50" width="50">
@@ -49,7 +99,7 @@
                 <p>Designing intuitive and engaging user interfaces with a focus on delivering exceptional user experiences. From wireframes  to final prototypes, I ensure your product is both functional and user-friendly.</p>
             </div>
 
-            <img src="resources/react.png" alt="react" height="50" width="70">
+            <img src="resources/react.png" alt="react" height="50" width="54">
             <img src="resources/java.jpg" alt="java" height="50" width="55">
             <img src="resources/mysql.jpg" alt="mysql" height="50" width="50">
             <img src="resources/angular.png" alt="angular" height="50" width="50">
