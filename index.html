@@ -11,14 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="resources/lib/normalize.css">
     <style>
-        body{
-            background: linear-gradient(to bottom,black,#012A4C,#0E0307,#012A4C,black);
-            color: transparent;
-        }
+
         header{
             position: relative;
-            height: 15vh;
+            height: 13vh;
+            background: black;
         }
         header>img{
             position: absolute;
@@ -48,7 +47,11 @@
         }
 
         section{
+            height: 90vh;
             position: relative;
+            background: linear-gradient(to bottom,black,#012A4C,#01213B,black);
+            color: transparent;
+
         }
         section>p{
             color: white;
@@ -109,11 +112,13 @@
 
         .imgs>img{
             border-radius: 100%;
+            position: absolute;
         }
 
         .serviceSec{
             position: absolute;
             top: 100vh;
+            margin: auto;
         }
         .serCard{
             position: absolute;
@@ -127,11 +132,25 @@
             top: 110vh;
             left: 50vw;
         }
+        #2{
+            position: absolute;
+            top: 110vh;
+            left: 70vw;
+
+        }
+        #contactMe{
+            position: absolute;
+            top: 200vh;
+        }
+        footer{
+            position: absolute;
+            bottom: 300vh;
+        }
     </style>
 </head>
 <body>
 <header>
-    <img src="resources/ts%20logo%20nw.png" alt="logo" height="150" width="150">
+    <img src="resources/img/ts%20logo%20nw.png" alt="logo" height="150" width="150">
     <nav>
         <ul>
             <li><a href="second-page.html#aboutMe">About</a></li>
@@ -157,10 +176,10 @@
     <div>
         <h2>Services & Skills</h2>
         <div class="imgs">
-            <img id="1" src="resources/js2.png" alt="java script" height="50" width="50">
-            <img id="2" src="resources/css.jpg" alt="css" height="50" width="50">
-            <img id="3" src="resources/figma.png" alt="figma" height="50" width="50">
-            <img id="4" src="resources/html.png" alt="html" height="50" width="50">
+            <img id="1" src="resources/img/js2.png" alt="java script" height="50" width="50">
+            <img id="2" src="resources/img/css.jpg" alt="css" height="50" width="50">
+            <img id="3" src="resources/img/figma.png" alt="figma" height="50" width="50">
+            <img id="4" src="resources/img/html.png" alt="html" height="50" width="50">
 
             <div class="serCard">
                 <h3>Web Development</h3>
@@ -175,10 +194,10 @@
                 <p>Designing intuitive and engaging user interfaces with a focus on delivering exceptional user experiences. From wireframes  to final prototypes, I ensure your product is both functional and user-friendly.</p>
             </div>
 
-            <img id="5" src="resources/react.png" alt="react" height="50" width="54">
-            <img id="6" src="resources/java.jpg" alt="java" height="50" width="55">
-            <img id="7" src="resources/mysql.jpg" alt="mysql" height="50" width="50">
-            <img id="8" src="resources/angular.png" alt="angular" height="50" width="50">
+            <img id="5" src="resources/img/react.png" alt="react" height="50" width="54">
+            <img id="6" src="resources/img/java.jpg" alt="java" height="50" width="55">
+            <img id="7" src="resources/img/mysql.jpg" alt="mysql" height="50" width="50">
+            <img id="8" src="resources/img/angular.png" alt="angular" height="50" width="50">
 
         </div>
     </div>
@@ -199,10 +218,10 @@
         <button type="submit">Submit</button>
         <br><br>
         <div>
-            <a href="https://github.com/thenurisenethma"><img src="resources/gitc.png" alt="github" width="50" height="50"></a>
-            <a href=""><img src="resources/gmailc.png" alt="email" width="50" height="50"></a>
-            <a href="www.linkedin.com/in/thenuri-de-silva-04b32a31a"><img src="resources/linkc.png" alt="linkedin" width="50" height="50"></a>
-            <a href="https://www.instagram.com/thenusenethma?igsh=MXZjMzlkcXo4bGoyMw%3D%3D&utm_source=qr"><img src="resources/instac.jpg" alt="instagram" width="50" height="50"></a>
+            <a href="https://github.com/thenurisenethma"><img src="resources/img/gitc.png" alt="github" width="50" height="50"></a>
+            <a href=""><img src="resources/img/gmailc.png" alt="email" width="50" height="50"></a>
+            <a href="www.linkedin.com/in/thenuri-de-silva-04b32a31a"><img src="resources/img/linkc.png" alt="linkedin" width="50" height="50"></a>
+            <a href="https://www.instagram.com/thenusenethma?igsh=MXZjMzlkcXo4bGoyMw%3D%3D&utm_source=qr"><img src="resources/img/instac.jpg" alt="instagram" width="50" height="50"></a>
         </div>
 
     </div>
@@ -210,10 +229,10 @@
 <br><br>
 <footer>
     <div>
-        <img src="resources/linkb.png" alt="photo"  width="25" height="25">
-        <img src="resources/gmailb.png" alt="photo"  width="25" height="25">
-        <img src="resources/gitb.png" alt="photo"  width="25" height="23">
-        <img src="resources/instab.png" alt="photo"  width="25" height="25">
+        <img src="resources/img/linkb.png" alt="photo" width="25" height="25">
+        <img src="resources/img/gmailb.png" alt="photo" width="25" height="25">
+        <img src="resources/img/gitb.png" alt="photo" width="25" height="23">
+        <img src="resources/img/instab.png" alt="photo" width="25" height="25">
     </div>
     <p>© Thenuri De Silva 2025.
         All rights reserved.</p>
