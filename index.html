@@ -103,41 +103,134 @@
             border-right: 25px solid transparent;
             border-top: 15px solid #ffff;
         }
-
-        h2,h3{
+        h2,h3,p{
             color: white;
         }
 
+        .serviceSec{
+            height: 1000vh;
+            position: absolute;
+            top: 100vh;
+            margin: auto;
+            width: 100%;
+            background-color:#01213B;
+        }
+        .serCard{
+            width: 70vw;
+            height: 80vh;
+            border-radius: 50px;
+            position: absolute;
+            top: 15vh;
+            left: 15vw;
+            margin: auto;
+            background-color:#01213B;
+        }
+        #development{
+            position: absolute;
+            top: 22vh;
+            height: 45vh;
+            width: 14vw;
+            border-radius: 50px;
+            background-color: black ;
+            left: 5vw;
+            padding: 20px;
+            opacity: 50%;
+        }
+        #design{
+            position: absolute;
+            top: 20vh;
+            height: 50vh;
+            width: 17vw;
+            border-radius: 50px;
+            background-color: black;
+            left: 25vw;
+            padding: 20px;
+        }
+        #ui{
+            position: absolute;
+            top: 22vh;
+            height: 45vh;
+            width: 14vw;
+            border-radius: 50px;
+            background-color: black ;
+            right: 5vw;
+            padding: 20px;
+            opacity: 50%;
+        }
+        .cardNames{
+            position: absolute;
+            left: 12%;
+            right: 0;
+            top: -13vh;
+            border-radius: 100vh;
+            height: 28vh;
+            aspect-ratio: 1/1;
+            background-color: lightgray;
+        }
+        .midCardName{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -16vh;
+            border-radius: 100%;
+            height: 35vh;
+            aspect-ratio: 1/1;
+            background-color: lightgray;
+        }
+        .cardPara{
+            position: absolute;
+            top: 14vh;
+            font-size: 14px;
+            padding: 2vw;
+        }
+        .midCardPara{
+              position: absolute;
+              top: 20vh;
+              font-size: 18px;
+          }
+        .midCardName:first-child{
+            top: 1vh;
+            left: 2vw;
 
-
+        }
         .imgs>img{
             border-radius: 100%;
             position: absolute;
         }
+        .imgs>img:first-child{
+            top: 10vh;
+            left: 10vw;
+        }
+        .imgs>img:nth-child(2){
+            top: 15vh;
+            left: 30vw;
+        }
+        .imgs>img:nth-child(3){
+            top: 13vh;
+            left: 64vw;
+        }
+        .imgs>img:nth-child(4){
+            top: 18vh;
+            left: 93vw;
+        }
+        .imgs>img:nth-child(6){
+            top: 82vh;
+            left: 9vw;
+        }
+        .imgs>img:nth-child(7){
+            top: 83vh;
+            left: 38vw;
+        }
+        .imgs>img:nth-child(8){
+            top: 70vh;
+            left: 65vw;
+        }
+        .imgs>img:nth-child(9){
+            top: 78vh;
+            left: 90vw;
+        }
 
-        .serviceSec{
-            position: absolute;
-            top: 100vh;
-            margin: auto;
-        }
-        .serCard{
-            position: absolute;
-            top: 110vh;
-            height: 50vh;
-            width: 25vw;
-            background-color: black ;
-        }
-        #1{
-            position: absolute;
-            top: 110vh;
-            left: 50vw;
-        }
-        #2{
-            position: absolute;
-            top: 110vh;
-            left: 70vw;
-
-        }
         #contactMe{
             position: absolute;
             top: 200vh;
@@ -176,28 +269,37 @@
     <div>
         <h2>Services & Skills</h2>
         <div class="imgs">
-            <img id="1" src="resources/img/js2.png" alt="java script" height="50" width="50">
-            <img id="2" src="resources/img/css.jpg" alt="css" height="50" width="50">
-            <img id="3" src="resources/img/figma.png" alt="figma" height="50" width="50">
-            <img id="4" src="resources/img/html.png" alt="html" height="50" width="50">
+            <img  src="resources/img/js2.png" alt="java script" height="50" width="50">
+            <img  src="resources/img/css.jpg" alt="css" height="50" width="50">
+            <img  src="resources/img/figma.png" alt="figma" height="50" width="50">
+            <img  src="resources/img/html.png" alt="html" height="50" width="50">
 
             <div class="serCard">
-                <h3>Web Development</h3>
-                <p>Building modern, responsive, and user-friendly websites tailored to your needs. From sleek front-end designs to robust back-end solutions, I create websites that look great and perform even better.</p>
-            </div>
-            <div class="serCard">
-                <h3>Web Design</h3>
-                <p>Crafting visually appealing, responsive, and functional website designs that align with your brand and captivate your audience. I focus on creating seamless experiences for every device.</p>
-            </div>
-            <div class="serCard">
-                <h3>UI/UX Design</h3>
-                <p>Designing intuitive and engaging user interfaces with a focus on delivering exceptional user experiences. From wireframes  to final prototypes, I ensure your product is both functional and user-friendly.</p>
-            </div>
+                <div id="development">
+                    <div class="cardNames">
+                        <h2>Web Development</h2>
+                    </div>
 
-            <img id="5" src="resources/img/react.png" alt="react" height="50" width="54">
-            <img id="6" src="resources/img/java.jpg" alt="java" height="50" width="55">
-            <img id="7" src="resources/img/mysql.jpg" alt="mysql" height="50" width="50">
-            <img id="8" src="resources/img/angular.png" alt="angular" height="50" width="50">
+                    <p class="cardPara">Building modern, responsive, and user-friendly websites tailored to your needs. From sleek front-end designs to robust back-end solutions, I create websites that look great and perform even better.</p>
+                </div>
+                <div id="design">
+                    <div class="midCardName">
+                        <h2>Web Design</h2>
+                    </div>
+                    <p class="midCardPara">Crafting visually appealing, responsive, and functional website designs that align with your brand and captivate your audience. I focus on creating seamless experiences for every device.</p>
+                </div>
+                <div id="ui">
+                    <div class="cardNames">
+                        <h2>UI/UX Design</h2>
+                    </div>
+                <p class="cardPara">Designing intuitive and engaging user interfaces with a focus on delivering exceptional user experiences. From wireframes  to final prototypes, I ensure your product is both functional and user-friendly.</p>
+            </div>
+        </div>
+
+            <img  src="resources/img/react.png" alt="react" height="50" width="54">
+            <img  src="resources/img/java.jpg" alt="java" height="50" width="55">
+            <img  src="resources/img/mysql.jpg" alt="mysql" height="50" width="50">
+            <img  src="resources/img/angular.png" alt="angular" height="50" width="50">
 
         </div>
     </div>
@@ -223,7 +325,6 @@
             <a href="www.linkedin.com/in/thenuri-de-silva-04b32a31a"><img src="resources/img/linkc.png" alt="linkedin" width="50" height="50"></a>
             <a href="https://www.instagram.com/thenusenethma?igsh=MXZjMzlkcXo4bGoyMw%3D%3D&utm_source=qr"><img src="resources/img/instac.jpg" alt="instagram" width="50" height="50"></a>
         </div>
-
     </div>
 </section>
 <br><br>
