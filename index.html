@@ -8,7 +8,7 @@
     <meta name="author" content="Thenuri de Silva">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="resources/lib/normalize.css">
+    <link rel="stylesheet" href="resources/lib/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
@@ -108,7 +108,7 @@
         }
 
         .serviceSec{
-            height: 1000vh;
+            height: 200vh;
             position: absolute;
             top: 100vh;
             margin: auto;
@@ -167,6 +167,7 @@
             aspect-ratio: 1/1;
             background-color: lightgray;
         }
+
         .midCardName{
             position: absolute;
             left: 0;
@@ -182,18 +183,39 @@
             position: absolute;
             top: 14vh;
             font-size: 14px;
-            padding: 2vw;
+            padding-right: 1vw;
         }
         .midCardPara{
-              position: absolute;
-              top: 20vh;
-              font-size: 18px;
-          }
+            position: absolute;
+            top: 20vh;
+            font-size: 18px;
+        }
         .midCardName:first-child{
-            top: 1vh;
-            left: 2vw;
+            top: -14vh;
+        }
+        #development {
+            top: 18vh;
+            font-size: 10px;
+        }
+
+        #design {
+            top: 16vh;
+        }
+
+        #ui {
+            top: 18vh;
+            font-size: 10px;
 
         }
+        .cardNames, .midCardName {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: "Aboreto", sans-serif;
+
+        }
+
         .imgs>img{
             border-radius: 100%;
             position: absolute;
@@ -231,14 +253,155 @@
             left: 90vw;
         }
 
-        #contactMe{
+        #contactMe {
+            font-family: "Aboreto", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
             position: absolute;
-            top: 200vh;
+            top: 230vh;
+            left: 0;
+            right: 0;
+            margin: auto;
         }
-        footer{
+        #contactMe h2{
+            font-family: "Aboreto", sans-serif;
             position: absolute;
-            bottom: 300vh;
+            left: 5vw;
+            top: 0;
         }
+        #contactMe form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #contactMe button {
+            position: absolute;
+            top: 70vh;
+        }
+        #contactMe img{
+            position: absolute;
+            top: 90vh;
+            border-radius: 50%;
+        }
+        #contactMe img:first-child{
+            left: 10vw;
+        }
+        #contactMe img:nth-child(2){
+            left: 30vw;
+        }
+        #contactMe img:nth-child(3){
+            left: 50vw;
+        }
+        #contactMe img:nth-child(4){
+            left: 70vw;
+        }
+        #contactMeCard{
+            background: linear-gradient( to top,black,black,#012A4C,black,black) ;
+            width: 300px;
+            height: 430px;
+            justify-items: center;
+
+        }
+        footer {
+            position: absolute;
+            top: 330vh;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer div {
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* Adds spacing between images */
+            margin-bottom: 10px; /* Adds space between images and text */
+        }
+
+        footer img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+        footer img:nth-child(2){
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+        }
+        footer img:nth-child(3){
+            width: 60px;
+        }
+        footer img:nth-child(4){
+            width: 60px;
+            height: 60px;
+        }
+
+        @media all and (max-width: 988px) {
+            #btnSeeMore{
+                font-size: 15px;
+            }
+            header{
+                font-size: 13px;
+            }
+            .serviceSec{
+
+            }
+            footer{
+            }
+        }
+        @media all and (max-width: 720px) {
+            section>p{
+                font-size: 20px;
+            }
+            header{
+                font-size: 13px;
+            }
+            .serviceSec{
+
+            }
+            footer{
+            }
+        }
+        @media all and (max-width: 555px) {
+
+            header{
+                font-size: 12px;
+            }
+        }
+        @media all and (max-width: 443px) {
+            header img {
+                width: 14vw;
+                height: 10vh;
+            }
+
+            header ul {
+                display: none;
+            }
+
+            section > p {
+                font-size: 14px;
+            }
+
+            @media all and (max-width: 313px) {
+                header img {
+                    width: 14vw;
+                    height: 6vh;
+                }
+
+                header ul {
+                    display: none;
+                }
+
+                section > p {
+                    font-size: 11px;
+                }
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -263,7 +426,7 @@
 
     <div id="triangle"></div>
 </section>
-<button type="button">See more...</button>
+<button id="btnSeeMore" type="button">See more...</button>
 
 <section class="serviceSec">
     <div>
@@ -277,7 +440,7 @@
             <div class="serCard">
                 <div id="development">
                     <div class="cardNames">
-                        <h2>Web Development</h2>
+                        <h2 id="webDev">Web Development</h2>
                     </div>
 
                     <p class="cardPara">Building modern, responsive, and user-friendly websites tailored to your needs. From sleek front-end designs to robust back-end solutions, I create websites that look great and perform even better.</p>
@@ -292,9 +455,9 @@
                     <div class="cardNames">
                         <h2>UI/UX Design</h2>
                     </div>
-                <p class="cardPara">Designing intuitive and engaging user interfaces with a focus on delivering exceptional user experiences. From wireframes  to final prototypes, I ensure your product is both functional and user-friendly.</p>
+                    <p class="cardPara">Designing intuitive and engaging user interfaces with a focus on delivering exceptional user experiences. From wireframes  to final prototypes, I ensure your product is both functional and user-friendly.</p>
+                </div>
             </div>
-        </div>
 
             <img  src="resources/img/react.png" alt="react" height="50" width="54">
             <img  src="resources/img/java.jpg" alt="java" height="50" width="55">
@@ -308,17 +471,21 @@
 <section id="contactMe">
     <div>
         <h2> Contact me</h2>
-        <form action="" method="get"></form>
-        <br>
-        <input type="text" placeholder="Your Name">
-        <br>  <br>
-        <input type="text" placeholder="Your Email">
-        <br>  <br>
-        <textarea placeholder="Your Message" rows="10" cols="20"> </textarea>
 
-        <br>
-        <button type="submit">Submit</button>
-        <br><br>
+        <div id="contactMeCard">
+            <form action="" method="get"></form>
+            <br>
+            <input type="text" placeholder="Your Name">
+            <br>  <br>
+            <input type="text" placeholder="Your Email">
+            <br>  <br>
+            <textarea placeholder="Your Message" rows="10" cols="23"> </textarea>
+
+            <br>
+            <button type="submit">Submit</button>
+            <br><br>
+        </div>
+
         <div>
             <a href="https://github.com/thenurisenethma"><img src="resources/img/gitc.png" alt="github" width="50" height="50"></a>
             <a href=""><img src="resources/img/gmailc.png" alt="email" width="50" height="50"></a>
