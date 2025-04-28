@@ -14,36 +14,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <style>
 
-        header{
-            position: relative;
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2vw;
             height: 13vh;
             background: black;
         }
-        header>img{
-            position: absolute;
-            left: 1vw;
-            height: 15vh;
-            width: 15vh;
+
+        header img {
+            height: 10vh;
+            width: auto;
         }
-        ul>li{
-            position: absolute;
-            top: 5vh;
+
+        nav>ul{
+            display: flex;
+            margin: auto;
+            padding: 0;
+            gap: 2vw;
         }
-        ul>li:first-child{
-            position: absolute;
-            left: 40vw;
-        }
-        ul>li:nth-child(2){
-            left: 50vw;
-        }
-        ul>li:nth-child(3){
-            left: 60vw;
-        }
-        ul>li:nth-child(4){
-            left: 70vw;
-        }
-        ul>li:nth-child(5){
-            left: 80vw;
+        nav li a {
+            color: white;
+            font-size: 85%;
+            text-decoration: none;
+            font-family: "Aboreto", sans-serif;
         }
 
         section{
@@ -318,8 +313,8 @@
         footer div {
             display: flex;
             justify-content: center;
-            gap: 15px; /* Adds spacing between images */
-            margin-bottom: 10px; /* Adds space between images and text */
+            gap: 15px;
+            margin-bottom: 10px;
         }
 
         footer img {
@@ -340,67 +335,7 @@
             height: 60px;
         }
 
-        @media all and (max-width: 988px) {
-            #btnSeeMore{
-                font-size: 15px;
-            }
-            header{
-                font-size: 13px;
-            }
-            .serviceSec{
 
-            }
-            footer{
-            }
-        }
-        @media all and (max-width: 720px) {
-            section>p{
-                font-size: 20px;
-            }
-            header{
-                font-size: 13px;
-            }
-            .serviceSec{
-
-            }
-            footer{
-            }
-        }
-        @media all and (max-width: 555px) {
-
-            header{
-                font-size: 12px;
-            }
-        }
-        @media all and (max-width: 443px) {
-            header img {
-                width: 14vw;
-                height: 10vh;
-            }
-
-            header ul {
-                display: none;
-            }
-
-            section > p {
-                font-size: 14px;
-            }
-
-            @media all and (max-width: 313px) {
-                header img {
-                    width: 14vw;
-                    height: 6vh;
-                }
-
-                header ul {
-                    display: none;
-                }
-
-                section > p {
-                    font-size: 11px;
-                }
-            }
-        }
 
     </style>
 </head>
@@ -419,7 +354,7 @@
 </header>
 <section>
     <p>Hey There welcome to my portfolio!</p>
-    <p>    I'm Thenuri De Silva.</p>
+    <p>I'm Thenuri De Silva.</p>
     <p>A passionate student aspiring to </p>
     <p>become an IT professional in the near </p>
     <p>future.</p>
@@ -487,10 +422,10 @@
         </div>
 
         <div>
-            <a href="https://github.com/thenurisenethma"><img src="resources/img/gitc.png" alt="github" width="50" height="50"></a>
+            <a href="git"><img src="resources/img/gitc.png" alt="github" width="50" height="50"></a>
             <a href=""><img src="resources/img/gmailc.png" alt="email" width="50" height="50"></a>
-            <a href="www.linkedin.com/in/thenuri-de-silva-04b32a31a"><img src="resources/img/linkc.png" alt="linkedin" width="50" height="50"></a>
-            <a href="https://www.instagram.com/thenusenethma?igsh=MXZjMzlkcXo4bGoyMw%3D%3D&utm_source=qr"><img src="resources/img/instac.jpg" alt="instagram" width="50" height="50"></a>
+            <a href="linkedin"><img src="resources/img/linkc.png" alt="linkedin" width="50" height="50"></a>
+            <a href="insta"><img src="resources/img/instac.jpg" alt="instagram" width="50" height="50"></a>
         </div>
     </div>
 </section>
