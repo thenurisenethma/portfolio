@@ -383,13 +383,49 @@
             width: 60px;
             height: 60px;
         }
+        /* Default burger and toggle hidden on desktop */
+        .burger {
+            display: none;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+            margin-left: auto;
+            padding: 10px;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        @media screen and (max-width: 390px) {
+            #btnSeeMore{
+                width: 30%;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+            header img {
+                height: 8vh;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            nav li a {
+                display: none;
+            }
+        }
 
     </style>
 </head>
 <body>
 <header id="homeNav">
     <img src="resources/img/logonw.png" alt="logo" height="100" width="100">
-    <nav>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="burger">&#9776;</label>
+
+    <nav >
         <ul>
             <li><a href="second-page.html#aboutMe">About</a></li>
             <li><a href="second-page.html#myWorks">My Work</a> </li>
@@ -409,7 +445,7 @@
     <div id="triangle"></div>
 </section>
     <a href="second-page.html#aboutMe">
-        <button id="btnSeeMore" type="button" >See more...</button>
+        <button id="btnSeeMore" type="button" >See more</button>
     </a>
 
 
