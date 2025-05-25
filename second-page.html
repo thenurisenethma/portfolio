@@ -15,14 +15,17 @@
 
     <style>
         header {
-            display: flex;
+            position: fixed;
+            top: 0;
             align-items: center;
             justify-content: space-between;
             padding: 2vw;
-            height: 13vh;
+            height: 4vh;
+            width: 100%;
             background: black;
+            display: flex;
+            z-index: 1;
         }
-
         header img {
             height: 10vh;
             width: auto;
@@ -33,6 +36,7 @@
             color: transparent;
         }
         section{
+            top: 8vh;
             height: 90vh;
             position: relative;
             background: linear-gradient(to bottom,black,#012A4C,#01213B,black);
@@ -197,6 +201,13 @@
             cursor: pointer;
 
         }
+
+        #backToContact{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 20vh;
+        }
         footer {
             position: absolute;
             top: 330vh;
@@ -326,7 +337,7 @@
     </div>
 </section>
 
-<div>
+<div id="backToContact">
     <p>READY TO BRING YOUR IDEAS TO LIFE?</p>
     <a href="index.html#contactMe">
         <button class="commonBtn">Yes!</button>

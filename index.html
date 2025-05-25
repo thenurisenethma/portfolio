@@ -15,12 +15,16 @@
     <style>
 
         header {
-            display: flex;
+            position: fixed;
+            top: 0;
             align-items: center;
             justify-content: space-between;
             padding: 2vw;
-            height: 13vh;
+            height: 4vh;
+            width: 100%;
             background: black;
+            display: flex;
+            z-index: 1;
         }
 
         header img {
@@ -42,6 +46,7 @@
         }
 
         section{
+            top: 12vh;
             height: 90vh;
             position: relative;
             background: linear-gradient(to bottom,black,#012A4C,#01213B,black);
@@ -221,6 +226,7 @@
         }
 
         .imgs>img{
+            z-index: 1;
             border-radius: 100%;
             position: absolute;
         }
@@ -255,9 +261,6 @@
         .imgs>img:nth-child(9){
             top: 78vh;
             left: 90vw;
-        }
-        .imgs > img:nth-child(2),.imgs > img:nth-child(3) {
-            z-index: 10;
         }
 
         #contactMe {
@@ -396,7 +399,7 @@
             display: none;
         }
 
-        @media screen and (max-width: 390px) {
+        @media all and (max-width: 390px) {
             #btnSeeMore{
                 width: 30%;
                 left: 0;
@@ -419,6 +422,58 @@
                 padding: 10px;
                 margin: 5px 0;
             }
+        }
+
+        @media all and (max-width: 320px) {
+            #btnSeeMore{
+                width: 30%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                font-size: 16px;
+            }
+            header img {
+                height: 8vh;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            nav li a {
+                display: none;
+            }
+            #home p {
+                font-size: 18px;
+                padding: 10px;
+                margin: 5px 0;
+            }
+        }
+        @media all and (max-width: 768px) {
+            #btnSeeMore{
+                width: 30%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                font-size: 16px;
+            }
+            header img {
+                height: 8vh;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            nav li a {
+                display: none;
+            }
+            #home p {
+                font-size: 16px;
+                padding: 10px;
+                margin: 5px 0;
+            }
+
         }
 
     </style>
