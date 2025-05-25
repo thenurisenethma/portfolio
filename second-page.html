@@ -21,7 +21,7 @@
             justify-content: space-between;
             padding: 2vw;
             height: 4vh;
-            width: 100%;
+            width: 96vw;
             background: black;
             display: flex;
             z-index: 1;
@@ -49,6 +49,7 @@
             font-optical-sizing: auto;
             font-style: normal;
             font-size: 25px;
+            line-height: 7vh;
         }
         h2,h3{
             color: white;
@@ -160,16 +161,20 @@
             transition: background-color 0.3s ease;
             border: solid #012A4C;
             border-radius: 10px;
-            background: linear-gradient( to right ,black,#012A4C,black) ;
+            background: linear-gradient( to right ,black,#012A4C,#012A4C) ;
             color: white;
 
+        }
+        #edu{
+            position: relative;
+            top: 30vh;
+        background: linear-gradient( to bottom ,black,#012A4C,black)
         }
         #eduDiv{
             width: 50%;
             height: auto;
             left: 0;
             right: 0;
-
             margin: auto;
             border-radius: 50px;
             border: double black;
@@ -206,11 +211,13 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            top: 20vh;
+            top: 50vh;
+            background:linear-gradient( to bottom ,black,#012A4C,black);
+            height: 40vh;
         }
         footer {
-            position: absolute;
-            top: 330vh;
+            position: relative;
+            top: 50vh;
             width: 100%;
             background-color: black;
             color: white;
@@ -269,12 +276,12 @@
         <div class="about-text">
             <h2>ABOUT ME</h2>
             <br>
-            <p class="aboretoFont">Hi! I'm Thenuri De Silva.</p>
-            <p class="aboretoFont">A passionate student aspiring to become an IT professional in the near future.</p>
-            <p class="aboretoFont">I'm currently studying at IJSE Software engineering institute with a love for creativity and problem-solving.</p>
-            <p class="aboretoFont">My approach is to combine creativity with technical precision to deliver meaningful and user-centered solutions.</p>
-            <p class="aboretoFont">I enjoy coding, watching anime, photography, and writing, which help me stay inspired and bring a fresh perspective to my projects.</p>
-            <p class="aboretoFont">Feel free to explore my portfolio!</p>
+            <p class="aboretoFont">Hi! I'm Thenuri De Silva.
+            <br>A passionate student aspiring to become an IT professional in the near future.
+             I'm currently studying at IJSE Software engineering institute with a love for creativity and problem-solving.
+             My approach is to combine creativity with technical precision to deliver meaningful and user-centered solutions.
+            <br>I enjoy coding, watching anime, photography, and writing, which help me stay inspired and bring a fresh perspective to my projects.
+            <br>Feel free to explore my portfolio!</p>
         </div>
 
         <div class="about-image">
