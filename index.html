@@ -226,7 +226,6 @@
         }
 
         .imgs>img{
-            z-index: 1;
             border-radius: 100%;
             position: absolute;
         }
@@ -261,6 +260,9 @@
         .imgs>img:nth-child(9){
             top: 78vh;
             left: 90vw;
+        }
+        .imgs > img:nth-child(2),.imgs > img:nth-child(3) {
+            z-index: 10;
         }
 
         #contactMe {
