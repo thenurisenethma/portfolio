@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Thenuri de Silva</title>
+    <link rel="icon" type="image/ico" href="resources/img/THENURI%20(2).png">
     <meta name ="keywords" content="Thenuri,Web developer,Portfolio,Java,HTML,CSS,Java script,MySQL">
     <meta name ="description" content="I'm Thenuri de Silva, a passionate Fullstack developer specializing in Web developing,UI/UX Engineering and Web Designing.Explore my projects, services, and contact me for collaboration.">
     <meta name="author" content="Thenuri de Silva">
@@ -13,7 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <style>
-
+        body{
+            background: #011627;
+        }
         header {
             position: fixed;
             top: 0;
@@ -22,49 +25,61 @@
             padding: 2vw;
             height: 4vh;
             width: 96vw;
-            background: black;
+            background: #011627 ;
             display: flex;
             z-index: 1;
         }
-
         header img {
-            height: 10vh;
+            height: 13vh;
             width: auto;
         }
 
         nav>ul{
+            color: #011627;
             display: flex;
             margin: auto;
             padding: 0;
             gap: 2vw;
         }
         nav li a {
-            color: white;
+            color: #00c2fd;
             font-size: 85%;
             text-decoration: none;
             font-family: "Aboreto", sans-serif;
         }
-
+        #home{
+            position: relative;
+            top: 23vh;
+        }
         section{
             top: 12vh;
             height: 90vh;
             position: relative;
-            background: linear-gradient(to bottom,black,#012A4C,#01213B,black);
+            background: #011627;
             color: transparent;
 
         }
         section>p{
+            padding-left: 10vw;
             color: white;
-            text-align: center;
             font-family: "Aboreto", sans-serif;
             font-optical-sizing: auto;
             font-style: normal;
             font-size: 28px;
-            position: absolute;
-            top: 15vh;
-            left: 0;
-            right: 0;
+            justify-content: left;
+            text-align: left;
+
         }
+        #profilep {
+            border-radius: 50%;
+            margin-top: 2px;
+        }
+        .about-image {
+            float: right;
+            margin-right: 10vw;
+            margin-top: -50vh;
+        }
+
         section>p:first-child{
             top: 10vh;
         }
@@ -82,8 +97,8 @@
         }
         button{
             position: absolute;
-            left: 45vw;
-            top: 75vh;
+            left: 25vw;
+            top: 80vh;
             height: 7vh;
             width: 9vw;
             border: solid #012A4C;
@@ -104,7 +119,7 @@
             top: 100vh;
             margin: auto;
             width: 100%;
-            background-color:#01213B;
+            background-color:#011627;
 
         }
         #serviceSec h2{
@@ -116,18 +131,18 @@
         }
         .serCard{
             width: 69vw;
-            height: 80vh;
+            height: 75vh;
             border-radius: 50px;
             position: absolute;
             top: 15vh;
             left: 15vw;
             margin: auto;
-            background-color:#01213B;
+            background-color: black;
             align-content: space-between;
         }
         #development{
             position: absolute;
-            height: 45vh;
+            height: 43vh;
             width: 14vw;
             border-radius: 50px;
             background-color: #004a79 ;
@@ -136,16 +151,16 @@
         }
         #design{
             position: absolute;
-            height: 45vh;
+            height: 43vh;
             width: 14vw;
             border-radius: 50px;
-            background-color: black;
+            background-color: #01213B;
             left: 26vw;
             padding: 20px;
         }
         #ui{
             position: absolute;
-            height: 45vh;
+            height: 43vh;
             width: 14vw;
             border-radius: 50px;
             background: #004a79;
@@ -177,25 +192,25 @@
 
 
         #development {
-            top: 18vh;
+            top: 14vh;
             font-size: 10px;
         }
 
         #design {
             font-size: 10px;
-            top: 18vh;
+            top: 14vh;
         }
 
         #ui {
-            top: 18vh;
+            top: 14vh;
             font-size: 10px;
 
         }
         .cardNames {
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
+            justify-content: left;
+            text-align: left;
             font-family: "Aboreto", sans-serif;
             position: absolute;
             transition: 0.01s;
@@ -207,43 +222,51 @@
             position: absolute;
         }
        #jsImg{
-            top: 20vh;
-            left: 10vw;
+           top: 76vh;
+           left: 55vw;
         }
-        #cssImg{
+        #hibernateImg{
             top: 15vh;
             left: 30vw;
         }
-       #figmaImg{
-            top: 13vh;
-            left: 64vw;
+        #figmaImg{
+            top: 17vh;
+            left: 50vw;
         }
-        #hibernateImg{
+        #cssImg{
+            top: 13vh;
+            left: 75vw;
+        }
+        #tailwindImg{
+            top: 20vh;
+            left: 10vw;
+         }
+        #htmlImg{
+            top: 66vh;
+            left: 9vw;
+        }
+        #reactImg{
             top: 18vh;
             left: 93vw;
         }
-        #reactImg{
-            top: 82vh;
-            left: 9vw;
-        }
         #javaImg{
-            top: 83vh;
-            left: 38vw;
+            top: 75vh;
+            left: 92vw;
         }
         #mySqlImg{
-            top: 70vh;
-            left: 65vw;
+            top: 73vh;
+            left: 75vw;
         }
-        #htmlImg{
+        #canvaImg{
             top: 78vh;
-            left: 80vw;
+            left: 30vw;
         }
         ul a:hover{
             color: steelblue;
         }
         button:hover{
-            background: transparent;
-            color: white;
+            background: #00c2fd;
+            color: black;
             border-color: steelblue;
             box-shadow: 0 0 15px rgb(0, 194, 253);
         }
@@ -264,6 +287,7 @@
             left: 0;
             right: 0;
             margin: auto;
+            background: #011627 ;
         }
         #contactMe h2 {
             font-family: "Aboreto", sans-serif;
@@ -278,7 +302,7 @@
             gap: 50px;
         }
         #contactMeCard {
-            background: linear-gradient(to top, black, black, #012A4C, black, black);
+            background: black;
             width: 300px;
             height: 430px;
             padding: 20px;
@@ -293,6 +317,9 @@
         }
         #contactMe button {
             margin-top: 10px;
+            position: absolute;
+            left: 45vw;
+            top: 78vh;
         }
         #contactMe button {
             margin-top: 10px;
@@ -354,10 +381,6 @@
                 box-shadow: 0 0 15px black;
             }
         }
-        .uiImgs {
-            opacity: 0;
-            visibility: hidden;
-        }
 
         #ui:hover ~ uiImgs {
             opacity: 1;
@@ -366,8 +389,8 @@
 
 
         #design:hover{
-            background: transparent;
-            color: white;
+            background: #00aee2;
+            color: #00c2fd;
             box-shadow: 0 0 15px rgb(0, 194, 253);
             transform: scale(1.1);
             transition-duration: 300ms;
@@ -378,7 +401,13 @@
                 border: solid black;
                 box-shadow: 0 0 15px black;
             }
+
         }
+        #design:hover p, #design:hover h2{
+            color: black;
+        }
+
+
         #development:hover{
             transform: scale(1.1);
             transition-duration: 300ms;
@@ -447,15 +476,21 @@
 .serImg{
     display: none;
 }
+.cursorEffect::after {
+    content: '|';
+    margin-left: 5px;
+    animation: blinkCursor 0.8s steps(1) infinite;
+    color: white;
+}
         @media all and (max-width: 390px) {
+            header{
+                grid-template-rows: repeat(1,1fr);
+            }
             #btnSeeMore{
                 width: 30%;
                 left: 0;
                 right: 0;
                 margin: auto;
-            }
-            header img {
-                height: 8vh;
             }
 
             .burger {
@@ -466,12 +501,21 @@
                 display: none;
             }
             #home p {
+                display: flex;
                 font-size: 18px;
                 padding: 10px;
                 margin: 5px 0;
+                justify-content: left;
+                text-align: left;
             }
+
         }
 
+        @keyframes blinkCursor {
+            0%   { opacity: 1; }
+            50%  { opacity: 0; }
+            100% { opacity: 1; }
+        }
         @media all and (max-width: 320px) {
             #btnSeeMore{
                 width: 30%;
@@ -479,9 +523,6 @@
                 right: 0;
                 margin: auto;
                 font-size: 16px;
-            }
-            header img {
-                height: 8vh;
             }
 
             .burger {
@@ -505,9 +546,6 @@
                 margin: auto;
                 font-size: 16px;
             }
-            header img {
-                height: 8vh;
-            }
 
             .burger {
                 display: block;
@@ -523,12 +561,24 @@
             }
 
         }
+        @media all and (max-width: 374px) {
+            #home p {
+                font-size: 14px;
+            }
+        }
+        @media all and (max-width: 1023px) {
+            nav ul{
+                display: none;
+            }
+
+        }
+
 
     </style>
 </head>
 <body>
 <header id="homeNav">
-    <img src="resources/img/logonw.png" alt="logo" height="100" width="100">
+    <img src="resources/img/THENURI%20(2).png" alt="logo">
     <input type="checkbox" id="menu-toggle" />
     <label for="menu-toggle" class="burger">&#9776;</label>
 
@@ -543,42 +593,45 @@
     </nav>
 </header>
 <section id="home">
-    <p>Hey There welcome to my portfolio!</p>
-    <p>I'm Thenuri De Silva.</p>
+    <p>Hey There!</p>
+    <p>I'm Thenuri de Silva.</p>
     <p>A passionate student aspiring to </p>
     <p>become an IT professional in the near </p>
-    <p>future.</p>
+    <p  class="cursorEffect">future.</p>
 
-    <div id="triangle"></div>
+    <div class="about-image">
+        <img src="resources/img/porfolioprf1.jpeg" title="photo" alt="photo" height="225" width="220" id="profilep">
+    </div>
 </section>
-    <a href="second-page.html#aboutMe">
-        <button id="btnSeeMore" type="button" >See more</button>
+    <a href="second-page.html">
+        <button id="btnSeeMore" type="button" >Learn more</button>
     </a>
 
 <section id="serviceSec">
     <div>
         <h2>SERVICES & SKILLS</h2>
         <div class="imgs">
-            <img class="web" id="jsImg" src="resources/img/js2.png" alt="java script" height="50" width="50">
-            <img class="web" id="cssImg" src="resources/img/css.jpg" alt="css" height="50" width="50">
+            <img class="web" id="jsImg" src="resources/img/jsnw.png" alt="java script" height="50" width="50">
+            <img class="web" id="cssImg" src="resources/img/cssnw.png" alt="css" height="50" width="50">
             <img class="software" id="hibernateImg" src="resources/img/hibernate-1.png" alt="hibernate" height="50" width="50">
             <img class="uiImgs" id="figmaImg" src="resources/img/figma.png" alt="figma" height="50" width="50">
+            <img class="web" id="tailwindImg" src="resources/img/tailwindnw.png" alt="figma" height="50" width="50">
 
             <div class="serCard">
                 <div id="development">
                     <div class="cardNames">
                         <img id="dev" class="serImg" src="resources/img/web%20designing%20css%20html%20blue%20neon%20colors%20image.jpg">
-                        <h2 id="webDev">Web Development</h2>
+                        <h2 id="webDev">Front-end Development</h2>
                     </div>
 
-                    <p class="cardPara">Building modern, responsive, and user-friendly websites tailored to your needs. From sleek front-end designs to robust back-end solutions, I create websites that look great and perform even better.</p>
-                </div>
+                    <p class="cardPara">Crafting visually appealing, responsive, and intuitive interfaces that engage users seamlessly. From clean layouts to smooth interactions, I design front-end experiences that not only look stunning but also deliver effortless usability across all devices.</p>
+                    </div>
                 <div id="design">
                     <div class="cardNames">
                         <img id="des" class="serImg" src="resources/img/ui_ux%20designing%20using%20tables%20or%20laptop%20blue%20neon%20colors%20image.jpg">
-                        <h2>Web Design</h2>
+                        <h2>Back-end Development</h2>
                     </div>
-                    <p class="midCardPara">Crafting visually appealing, responsive, and functional website designs that align with your brand and captivate your audience. I focus on creating seamless experiences for every device.</p>
+                    <p class="midCardPara">Building secure, scalable, and high-performance back-end systems tailored to your goals. From managing databases to developing APIs, I create powerful server-side solutions that ensure your applications run reliably and efficiently.</p>
                 </div>
                 <div id="ui">
                     <div class="cardNames">
@@ -592,7 +645,8 @@
             <img class="software" id="reactImg" src="resources/img/react.png" alt="react" height="50" width="54">
             <img class="software" id="javaImg" src="resources/img/java.jpg" alt="java" height="50" width="55">
             <img class="software" id="mySqlImg" src="resources/img/mysql.jpg" alt="mysql" height="50" width="50">
-            <img class="web" id="htmlImg" src="resources/img/html.png" alt="html" height="50" width="50">
+            <img class="web" id="htmlImg" src="resources/img/htmlnw2.png" alt="html" height="50" width="50">
+            <img class="web" id="canvaImg" src="resources/img/canva.jpg" alt="html" height="50" width="50">
 
         </div>
     </div>
@@ -646,7 +700,7 @@
         <img src="resources/img/gitb.png" alt="photo" width="25" height="23">
         <img src="resources/img/instab.png" alt="photo" width="25" height="25">
     </div>
-    <p>© Thenuri De Silva 2025.
+    <p>© Thenuri de Silva 2025.
         All rights reserved.</p>
 </footer>
 <script>
@@ -656,6 +710,8 @@
     const javaImg = document.getElementById('javaImg');
     const jsImg = document.getElementById('jsImg');
     const cssImg = document.getElementById('cssImg');
+    const tailwindImg = document.getElementById('tailwindImg');
+    const canvaImg = document.getElementById('canvaImg');
     const hibernateImg = document.getElementById('hibernateImg');
     const reactImg = document.getElementById('reactImg');
     const mySqlImg = document.getElementById('mySqlImg');
@@ -665,9 +721,10 @@
     uiCard.addEventListener('mouseenter', () => {
         figmaImg.style.opacity = '1';
         figmaImg.style.visibility = 'visible';
-        cssImg.style.visibility = 'visible';
-        figmaImg.style.visibility = 'visible';
-        htmlImg.style.visibility = 'visible';
+        cssImg.style.visibility = 'hidden';
+        canvaImg.style.visibility = 'visible';
+        tailwindImg.style.visibility = 'hidden';
+        htmlImg.style.visibility = 'hidden';
         jsImg.style.visibility = 'hidden';
         mySqlImg.style.visibility = 'hidden';
         reactImg.style.visibility = 'hidden';
@@ -686,11 +743,13 @@
         htmlImg.style.visibility = 'visible';
         jsImg.style.visibility = 'visible';
         mySqlImg.style.visibility = 'hidden';
-        reactImg.style.visibility = 'hidden';
+        reactImg.style.visibility = 'visible';
         hibernateImg.style.visibility = 'hidden';
         javaImg.style.visibility = 'hidden';
         uiCard.style.visibility='hidden';
         desCard.style.visibility='hidden';
+        canvaImg.style.visibility = 'hidden';
+        tailwindImg.style.visibility = 'visible';
     });
     desCard.addEventListener('mouseenter', () => {
         figmaImg.style.opacity = '1';
@@ -701,11 +760,13 @@
         htmlImg.style.visibility = 'hidden';
         jsImg.style.visibility = 'hidden';
         mySqlImg.style.visibility = 'visible';
-        reactImg.style.visibility = 'visible';
+        reactImg.style.visibility = 'hidden';
         hibernateImg.style.visibility = 'visible';
         javaImg.style.visibility = 'visible';
         devCard.style.visibility='hidden';
         uiCard.style.visibility='hidden';
+        canvaImg.style.visibility = 'hidden';
+        tailwindImg.style.visibility = 'hidden';
     });
 
     uiCard.addEventListener('mouseleave', () => {
@@ -717,6 +778,8 @@
         reactImg.style.visibility = 'visible';
         hibernateImg.style.visibility = 'visible';
         javaImg.style.visibility = 'visible';
+        canvaImg.style.visibility='visible';
+        tailwindImg.style.visibility='visible';
         devCard.style.visibility='visible';
         desCard.style.visibility='visible';
     });
@@ -730,6 +793,8 @@
         hibernateImg.style.visibility = 'visible';
         javaImg.style.visibility = 'visible';
         devCard.style.visibility='visible';
+        canvaImg.style.visibility='visible';
+        tailwindImg.style.visibility='visible';
         uiCard.style.visibility='visible';
     });
     devCard.addEventListener('mouseleave', () => {
@@ -741,6 +806,8 @@
         reactImg.style.visibility = 'visible';
         hibernateImg.style.visibility = 'visible';
         javaImg.style.visibility = 'visible';
+        canvaImg.style.visibility='visible';
+        tailwindImg.style.visibility='visible';
         uiCard.style.visibility='visible';
         desCard.style.visibility='visible';
     });

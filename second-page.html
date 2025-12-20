@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Thenuri de Silva</title>
+    <link rel="icon" type="image/ico" href="resources/img/THENURI%20(2).png">
     <meta name ="keywords" content="Thenuri,Web developer,Portfolio,Java,HTML,CSS,Java script,MySQL">
     <meta name ="description" content="I'm Thenuri de Silva, a passionate Fullstack developer specializing in Web developing,UI/UX Engineering and Web Designing.Explore my projects, services, and contact me for collaboration.">
     <meta name="author" content="Thenuri de Silva">
@@ -12,7 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
     <style>
         header {
             position: fixed;
@@ -22,27 +26,29 @@
             padding: 2vw;
             height: 4vh;
             width: 96vw;
-            background: black;
+            background: #011627 ;
             display: flex;
             z-index: 1;
         }
         header img {
-            height: 10vh;
+            height: 13vh;
             width: auto;
         }
+        nav{
 
+        }
         body{
-            background: black;
-            color: transparent;
+            background: #011627;
         }
-        section{
-            top: 8vh;
-            height: 90vh;
+        #aboutMe {
             position: relative;
-            background: linear-gradient(to bottom,black,#012A4C,#01213B,black);
+            top: 8vh;
+            background: #011627;
             color: transparent;
-
+            min-height: 90vh;
+            height: auto;
         }
+
         p{
             color: white;
             text-align: center;
@@ -52,19 +58,25 @@
             line-height: 7vh;
         }
         h2,h3{
-            color: white;
+            color: #00c2fd;
         }
         #profilep{
             border-radius: 50%;
         }
+        nav{
+
+        }
         nav>ul{
+            color: #011627;
             display: flex;
             margin: auto;
             padding: 0;
             gap: 2vw;
         }
         nav li a {
-            color: white;
+            position: relative;
+            right: 0;
+            color: #00c2fd;
             font-size: 85%;
             text-decoration: none;
             font-family: "Aboreto", sans-serif;
@@ -88,20 +100,26 @@
         }
         #aboutMe .about-text {
             flex: 1;
+            font-family: "Zain", sans-serif;
+            font-weight: 300;
+            font-style: normal;
         }
 
         #aboutMe .about-image {
             flex-shrink: 0;
         }
-
         #profilep {
             border-radius: 50%;
         }
         h2{
-            color: white;
+            color: #00c2fd;
             text-decoration: none;
             font-family: "Aboreto", sans-serif;
         }
+        #myWorks div{
+            background-color: #011627;
+        }
+
         #myWorks h2 {
             display: flex;
             justify-content: space-between;
@@ -115,6 +133,7 @@
             flex-wrap: wrap;
             gap: 20px;
             padding: 20px;
+            background-color: #011627;
         }
 
         .myWorksContainer > div {
@@ -126,8 +145,8 @@
             color: white;
             text-align: center;
             font-optical-sizing: auto;
-            font-style: normal;
-            font-size: 18px;
+            font-family: "Zain", sans-serif;
+            font-weight: 300;
         }
         .coffeeShopContainer img {
             padding-left: 2vw;
@@ -143,13 +162,10 @@
             padding-left: 2vw;
         }
         .ticTacToeContainer img{
-            padding-left: 9vw;
-            width: 35%;
-            height: 55%;
-
+            padding-left: 5vw;
         }
         .ticTacToeContainer h3{
-            padding-left: 10vw;
+            padding-left: 8vw;
         }
         .openGit{
             margin-left: 35%;
@@ -161,31 +177,71 @@
             transition: background-color 0.3s ease;
             border: solid #012A4C;
             border-radius: 10px;
-            background: linear-gradient( to right ,black,#012A4C,#012A4C) ;
+            background: #012A4C ;
             color: white;
 
         }
-        #edu{
+        #assignments h3{
+            padding-left: 5vw;
+            gap: 20px;
+        }
+        #assignments{
+            padding-top: 25vh;
+            margin-bottom: 20px;
+            padding-bottom: 0;
+        }
+        .button-container {
+             margin-bottom: 0;
+             padding-bottom: 0;
+         }
+
+        .eduCardsContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .eduCard {
+            width: 200px;
+            min-height: 200px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            border: 1px solid #012A4C;
+            text-align: center;
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .eduCard p {
+            padding: 20px;
+            font-size: 18px;
+            line-height: 1.9;
+            margin: 0;
+        }
+        #edu {
             position: relative;
             top: 30vh;
-        background: linear-gradient( to bottom ,black,#012A4C,black)
         }
-        #eduDiv{
-            width: 50%;
-            height: auto;
-            left: 0;
-            right: 0;
-            margin: auto;
-            border-radius: 50px;
-            border: double black;
+
+
+        .eduCard:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px #00c2fd88, 0 0 15px #00c2fd;
         }
+
         #edu h2 {
+            font-size: 32px;
+            color: #00c2fd;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 30px;
             gap: 20px;
         }
+
         .myWorksContainer > div {
             display: flex;
             flex-direction: column;
@@ -201,8 +257,8 @@
             width: 9vw;
             border: solid #012A4C;
             border-radius: 10px;
-            background: linear-gradient( to right ,black,#012A4C,black) ;
-            color: white;
+            background: linear-gradient( to right ,black,#00c2fd,black) ;
+            color: black;
             cursor: pointer;
 
         }
@@ -212,12 +268,12 @@
             flex-direction: column;
             position: relative;
             top: 50vh;
-            background:linear-gradient( to bottom ,black,#012A4C,black);
+            background: linear-gradient( to bottom,#011627,black) ;
             height: 40vh;
         }
         footer {
             position: relative;
-            top: 50vh;
+            top: 40vh;
             width: 100%;
             background-color: black;
             color: white;
@@ -258,14 +314,110 @@
         }
         button:active{
             transform: scale(0.9);
-            background: #01213B;
+            background: #00c2fd;
             transition: 0.01s;
         }
         button:hover{
-            background: transparent;
-            color: white;
+            background: #00c2fd;
+            color: black;
             border-color: steelblue;
             box-shadow: 0 0 15px rgb(0, 194, 253);
+        }
+        .videoGallery {
+            padding: 20px;
+            margin-top: 20vh;
+            text-align: center;
+        }
+        .videoTitle {
+            text-align: left;
+            color: #00c2fd;
+            margin-left: 30px;
+            font-size: 20px;
+        }
+
+        .videoContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+        }
+
+        .videoContainer iframe {
+            width: 420px;
+            height: 240px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #012A4C;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 5vw;
+            row-gap: 10vh;
+        }
+        .assignment-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: #012A4C;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        .popupLine {
+            visibility: hidden;
+            width: 100px;
+            background-color: #7e7d7d;
+            color: #302f2f;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px 8px;
+            position: absolute;
+            z-index: 1;
+            bottom: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.5%;
+            transition: opacity 0.3s;
+            font-size: 14px;
+        }
+
+        .tooltip:hover .popupLine {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .videoContainer iframe {
+                width: 90vw;
+                height: 200px;
+            }
+        }
+        @media (max-width: 768px) {
+            .eduCardsContainer {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .cursorEffect::after {
+            content: '|';
+            margin-left: 5px;
+            animation: blinkCursor 0.8s steps(1) infinite;
+            color: white;
+        }
+
+        @keyframes blinkCursor {
+            0%   { opacity: 1; }
+            50%  { opacity: 0; }
+            100% { opacity: 1; }
         }
 
     </style>
@@ -273,7 +425,7 @@
 
 <body>
 <header>
-    <img src="resources/img/logonw.png" alt="logo" height="100" width="100">
+    <img src="resources/img/THENURI%20(2).png" alt="logo">
 
     <nav>
         <ul>
@@ -292,7 +444,7 @@
         <div class="about-text">
             <h2>ABOUT ME</h2>
             <br>
-            <p class="aboretoFont">Hi! I'm Thenuri De Silva.
+            <p class=" about-text cursorEffect">Hi! I'm Thenuri de Silva.
             <br>A passionate student aspiring to become an IT professional in the near future.
              I'm currently studying at IJSE Software engineering institute with a love for creativity and problem-solving.
              My approach is to combine creativity with technical precision to deliver meaningful and user-centered solutions.
@@ -313,8 +465,8 @@
             <div class="coffeeShopContainer">
                 <h3>Coffee Shop Management System</h3>
                 <img src="resources/img/Capture.PNG" title="coffee shop system" alt="coffee shop system photo" height="170" width="300">
-                <p class="myWorksContainerP">
-                    This system involved creating a user-friendly interface for managing orders, inventory, and customer data using JavaFX and MySQL.
+                <p class="myWorksContainerP about-text">
+                    This pos system involved managing orders, inventory, and customer data using JavaFX and MySQL.
                 </p>
                 <a href="https://github.com/thenurisenethma/layered-skyCafe">
                     <button class="openGit">Open github</button>
@@ -323,8 +475,8 @@
             </div>
             <div class="ticTacToeContainer">
                 <h3>Tic Tac Toe</h3>
-                <img src="resources/img/ttt.PNG" title="tic tac toe" alt="tic tac toe game photo" height="170" width="130">
-            <p class="myWorksContainerP">
+                <img src="resources/img/Start%20Game.png" title="tic tac toe" alt="tic tac toe game photo" height="185" width="200">
+            <p class="myWorksContainerP about-text">
                 The game features a two-player mode, a clean design, and logic handling for win detection and draw scenarios.
             </p>
             <a href="https://github.com/thenurisenethma/layered-skyCafe">
@@ -337,7 +489,7 @@
                 <h3>Therapy Center Management System</h3>
                 <img class="therapyC" src="resources/img/therapyc.png" title="Therapy Center Management System" alt="therapy center management system photo">
                 <br>
-                <p class="myWorksContainerP">
+                <p class="myWorksContainerP about-text">
                     This a pos system for managing patients, therapists, employees, programs and scheduling using JavaFX and Hibernate.
                 </p>
                 <a href="https://github.com/thenurisenethma/Therapy-Center">
@@ -346,17 +498,65 @@
             </div>
         </div>
     </div>
+
+    <div class="videoGallery">
+        <h3 class="videoTitle">Project Demonstration Videos</h3>
+        <div class="videoContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YnQBK7TXMo0?si=PTpU5dckqAHsU--2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/clbW1u6nABc?si=U3Klig2b9BhrZ7Wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/I6ikUDFICTI?si=mP0hSDUq8iUDfpd-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <section id="assignments">
+        <h3>Internet Technologies Module Assignments</h3>
+        <br><br>
+        <div class="button-container">
+            <a href="https://github.com/thenurisenethma/Assignment-01" target="_blank" class="assignment-btn tooltip">Assignment 1
+                <span class="popupLine">open github</span></a>
+            <a href="https://github.com/yourusername/assignment2" target="_blank" class="assignment-btn tooltip">Assignment 2
+                <span class="popupLine">open github</span></a>
+            <a href="https://github.com/thenurisenethma/Assignment-03" target="_blank" class="assignment-btn tooltip">Assignment 3
+                <span class="popupLine">open github</span></a>
+            <a href="https://github.com/thenurisenethma/Assignment04" target="_blank" class="assignment-btn tooltip">Assignment 4
+                <span class="popupLine">open github</span></a>
+            <a href="https://github.com/yourusername/assignment5" target="_blank" class="assignment-btn tooltip">Assignment 5
+                <span class="popupLine">open github</span></a>
+            <a href="https://github.com/yourusername/assignment6" target="_blank" class="assignment-btn tooltip">Assignment 6
+                <span class="popupLine">open github</span></a>
+            <a href="https://github.com/yourusername/assignment7" target="_blank" class="assignment-btn tooltip">Assignment 7
+                <span class="popupLine">open github</span></a>
+            <a href="https://github.com/thenurisenethma/Assignment-08" target="_blank" class="assignment-btn tooltip">Assignment 8
+                <span class="popupLine">open github</span></a>
+            <a href="https://github.com/thenurisenethma/Assignment-09" target="_blank" class="assignment-btn tooltip">Assignment 9
+                <span class="popupLine">open github</span></a>
+            <a href="https://github.com/yourusername/assignment10" target="_blank" class="assignment-btn tooltip">Assignment 10
+                <span class="popupLine">open github</span></a>
+            <a href="https://github.com/yourusername/assignment11" target="_blank" class="assignment-btn tooltip">Assignment 11
+                <span class="popupLine">open github</span></a>
+
+        </div>
+    </section>
 </section>
 
 <section id="edu">
     <div>
         <h2>EDUCATION & CERTIFICATES</h2>
-        <br>
-        <br>
-        <div id="eduDiv">
-            <p>Studied at Kalutara Tissa Central Collage & Kalutara Balika National School</p>
-            <p>Certificate course at University of Colombo </p>
-            <p>Diploma in IT & Diploma in English from ESOFT metro campus</p>
+        <div class="eduCardsContainer">
+            <div class="eduCard">
+                <p>Studied at Kalutara Tissa Central Collage & Kalutara Balika National School</p>
+            </div>
+            <div class="eduCard">
+                <p>Certificate course at University of Colombo </p>
+            </div>
+            <div class="eduCard">
+                <p>Diploma in IT & Diploma in English from ESOFT metro campus</p>
+            </div>
+            <div class="eduCard">
+                <p>Following Graduate Diploma in Software Engineering at Institute of Software Engineering (IJSE)</p>
+            </div>
         </div>
     </div>
 </section>
@@ -375,7 +575,7 @@
         <img src="resources/img/gitb.png" alt="photo" width="25" height="23">
         <img src="resources/img/instab.png" alt="photo" width="25" height="25">
     </div>
-    <p>© Thenuri De Silva 2025.
+    <p>© Thenuri de Silva 2025.
         All rights reserved.</p>
 </footer>
 </body>
